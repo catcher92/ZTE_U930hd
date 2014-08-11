@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.internal.policy.impl.Cling
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="20.0dip" android:layout_marginTop="90.0dip" android:layout_marginRight="20.0dip">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:id="@id/imageview_cling_title" android:text="@string/prompt_changeable_title" style="@style/ClingTitleText" />
+            <TextView android:id="@id/imageview_cling_prompt1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/prompt_imageview_changeable1" style="@style/ClingText" />
+            <TextView android:id="@id/imageview_cling_prompt2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/prompt_imageview_changeable2" style="@style/ClingText" />
+        </LinearLayout>
+    </FrameLayout>
+    <Button android:layout_gravity="bottom|right|center" android:id="@id/imageview_cling_dismiss" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:layout_marginBottom="5.0dip" android:onClick="dismissLockScreenCling" style="@style/ClingButton" />
+</com.android.internal.policy.impl.Cling>

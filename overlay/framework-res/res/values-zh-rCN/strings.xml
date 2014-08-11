@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="reboot_reboot">重新启动</string>
+	<string name="reboot_recovery">刷机模式</string>
+</resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">号码归属地查询</string>
+    <string name="phonenum">电话号码</string>
+    <string name="clear">清除</string>
+    <string name="cardtype">号码类型</string>
+    <string name="cityname">所属城市</string>
+    <string name="areacode">城市区号</string>
+    <string name="fixedPhone">固话或小灵通</string>
+    <string name="intlPhone">国际号码</string>
+    <string name="errorPhone">提示：查询手机号码，您至少需要输入前7位数字</string>
+    <string name="inputhinttext">请输入手机号码或电话区号</string>
+    <string name="lawinfo">敬告：归属地查询数据库为免费数据，非由本公司提供，如因数据库更新不及时或其它原因导致归属地信息不准确，本公司不承担任何责任。</string>
+</resources>

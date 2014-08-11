@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/wel_loading" android:background="@drawable/loading" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="center_horizontal" android:id="@id/space_top_pb" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ProgressBar android:layout_gravity="center" android:id="@id/pb_welcome" android:visibility="visible" android:layout_width="240.0dip" android:layout_height="wrap_content" android:max="100" android:secondaryProgress="0" style="?android:attr/progressBarStyleHorizontal" />
+    <TextView android:textSize="18.0dip" android:gravity="center_horizontal" android:id="@id/welcome_scale" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/app_wel_loading" />
+</LinearLayout>

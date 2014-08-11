@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Location of number Query</string>
+    <string name="phonenum">number</string>
+    <string name="clear">clear</string>
+    <string name="cardtype">card type</string>
+    <string name="cityname">city name</string>
+    <string name="areacode">area code</string>
+    <string name="fixedPhone">固话或小灵通</string>
+    <string name="intlPhone">国际电话</string>
+    <string name="errorPhone">Search the mobile number, please input the first seven numbers</string>
+    <string name="inputhinttext">please input mobile number or area code</string>
+    <string name="lawinfo">Warning:Free data,we are not responsible for the wrong result.</string>
+</resources>

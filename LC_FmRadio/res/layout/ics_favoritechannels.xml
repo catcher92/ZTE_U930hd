@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <AbsoluteLayout android:orientation="vertical" android:id="@id/page1_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+        <AbsoluteLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_y="1.0dip">
+            <Button android:textSize="20.0dip" android:ellipsize="end" android:id="@id/channel_btn1" android:background="@drawable/btn_favorites_normal" android:layout_width="178.0px" android:layout_height="108.0px" android:singleLine="true" android:layout_x="62.0px" />
+            <Button android:textSize="20.0dip" android:ellipsize="end" android:id="@id/channel_btn2" android:background="@drawable/btn_favorites_normal" android:layout_width="178.0px" android:layout_height="108.0px" android:singleLine="true" android:layout_x="271.0px" />
+            <Button android:textSize="20.0dip" android:ellipsize="end" android:id="@id/channel_btn3" android:background="@drawable/btn_favorites_normal" android:layout_width="178.0px" android:layout_height="108.0px" android:singleLine="true" android:layout_x="480.0px" />
+        </AbsoluteLayout>
+        <AbsoluteLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_y="60.0dip">
+            <Button android:textSize="20.0dip" android:ellipsize="end" android:id="@id/channel_btn4" android:background="@drawable/btn_favorites_normal" android:layout_width="178.0px" android:layout_height="108.0px" android:singleLine="true" android:layout_x="62.0px" />
+            <Button android:textSize="20.0dip" android:ellipsize="end" android:id="@id/channel_btn5" android:background="@drawable/btn_favorites_normal" android:layout_width="178.0px" android:layout_height="108.0px" android:singleLine="true" android:layout_x="271.0px" />
+            <Button android:textSize="20.0dip" android:ellipsize="end" android:id="@id/channel_btn6" android:background="@drawable/btn_favorites_normal" android:layout_width="178.0px" android:layout_height="108.0px" android:singleLine="true" android:layout_x="480.0px" />
+        </AbsoluteLayout>
+        <AbsoluteLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_y="120.0dip">
+            <Button android:textSize="20.0dip" android:ellipsize="end" android:id="@id/channel_btn7" android:background="@drawable/btn_favorites_normal" android:layout_width="178.0px" android:layout_height="108.0px" android:singleLine="true" android:layout_x="62.0px" />
+            <Button android:textSize="20.0dip" android:ellipsize="end" android:id="@id/channel_btn8" android:background="@drawable/btn_favorites_normal" android:layout_width="178.0px" android:layout_height="108.0px" android:singleLine="true" android:layout_x="271.0px" />
+            <Button android:textSize="20.0dip" android:ellipsize="end" android:id="@id/channel_btn9" android:background="@drawable/btn_favorites_normal" android:layout_width="178.0px" android:layout_height="108.0px" android:singleLine="true" android:layout_x="480.0px" />
+        </AbsoluteLayout>
+    </AbsoluteLayout>
+    <AbsoluteLayout android:orientation="vertical" android:id="@id/page2_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+        <AbsoluteLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_y="1.0dip">
+            <Button android:textSize="20.0dip" android:ellipsize="end" android:id="@id/channel_btn10" android:background="@drawable/btn_favorites_normal" android:layout_width="178.0px" android:layout_height="108.0px" android:singleLine="true" android:layout_x="62.0px" />
+            <Button android:textSize="20.0dip" android:ellipsize="end" android:id="@id/channel_btn11" android:background="@drawable/btn_favorites_normal" android:layout_width="178.0px" android:layout_height="108.0px" android:singleLine="true" android:layout_x="271.0px" />
+            <Button android:textSize="20.0dip" android:ellipsize="end" android:id="@id/channel_btn12" android:background="@drawable/btn_favorites_normal" android:layout_width="178.0px" android:layout_height="108.0px" android:singleLine="true" android:layout_x="480.0px" />
+        </AbsoluteLayout>
+        <AbsoluteLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_y="60.0dip">
+            <Button android:textSize="20.0dip" android:ellipsize="end" android:id="@id/channel_btn13" android:background="@drawable/btn_favorites_normal" android:layout_width="178.0px" android:layout_height="108.0px" android:singleLine="true" android:layout_x="62.0px" />
+            <Button android:textSize="20.0dip" android:ellipsize="end" android:id="@id/channel_btn14" android:background="@drawable/btn_favorites_normal" android:layout_width="178.0px" android:layout_height="108.0px" android:singleLine="true" android:layout_x="271.0px" />
+            <Button android:textSize="20.0dip" android:ellipsize="end" android:id="@id/channel_btn15" android:background="@drawable/btn_favorites_normal" android:layout_width="178.0px" android:layout_height="108.0px" android:singleLine="true" android:layout_x="480.0px" />
+        </AbsoluteLayout>
+        <AbsoluteLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_y="120.0dip">
+            <Button android:textSize="20.0dip" android:ellipsize="end" android:id="@id/channel_btn16" android:background="@drawable/btn_favorites_normal" android:layout_width="178.0px" android:layout_height="108.0px" android:singleLine="true" android:layout_x="62.0px" />
+            <Button android:textSize="20.0dip" android:ellipsize="end" android:id="@id/channel_btn17" android:background="@drawable/btn_favorites_normal" android:layout_width="178.0px" android:layout_height="108.0px" android:singleLine="true" android:layout_x="271.0px" />
+            <Button android:textSize="20.0dip" android:ellipsize="end" android:id="@id/channel_btn18" android:background="@drawable/btn_favorites_normal" android:layout_width="178.0px" android:layout_height="108.0px" android:singleLine="true" android:layout_x="480.0px" />
+        </AbsoluteLayout>
+    </AbsoluteLayout>
+    <AbsoluteLayout android:orientation="vertical" android:id="@id/page3_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+        <AbsoluteLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_y="1.0dip">
+            <Button android:textSize="20.0dip" android:ellipsize="end" android:id="@id/channel_btn19" android:background="@drawable/btn_favorites_normal" android:layout_width="178.0px" android:layout_height="108.0px" android:singleLine="true" android:layout_x="62.0px" />
+            <Button android:textSize="20.0dip" android:ellipsize="end" android:id="@id/channel_btn20" android:background="@drawable/btn_favorites_normal" android:layout_width="178.0px" android:layout_height="108.0px" android:singleLine="true" android:layout_x="271.0px" />
+            <Button android:textSize="20.0dip" android:ellipsize="end" android:id="@id/channel_btn21" android:background="@drawable/btn_favorites_normal" android:layout_width="178.0px" android:layout_height="108.0px" android:singleLine="true" android:layout_x="480.0px" />
+        </AbsoluteLayout>
+        <AbsoluteLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_y="60.0dip">
+            <Button android:textSize="20.0dip" android:ellipsize="end" android:id="@id/channel_btn22" android:background="@drawable/btn_favorites_normal" android:layout_width="178.0px" android:layout_height="108.0px" android:singleLine="true" android:layout_x="62.0px" />
+            <Button android:textSize="20.0dip" android:ellipsize="end" android:id="@id/channel_btn23" android:background="@drawable/btn_favorites_normal" android:layout_width="178.0px" android:layout_height="108.0px" android:singleLine="true" android:layout_x="271.0px" />
+            <Button android:textSize="20.0dip" android:ellipsize="end" android:id="@id/channel_btn24" android:background="@drawable/btn_favorites_normal" android:layout_width="178.0px" android:layout_height="108.0px" android:singleLine="true" android:layout_x="480.0px" />
+        </AbsoluteLayout>
+        <AbsoluteLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_y="120.0dip">
+            <Button android:textSize="20.0dip" android:ellipsize="end" android:id="@id/channel_btn25" android:background="@drawable/btn_favorites_normal" android:layout_width="178.0px" android:layout_height="108.0px" android:singleLine="true" android:layout_x="62.0px" />
+            <Button android:textSize="20.0dip" android:ellipsize="end" android:id="@id/channel_btn26" android:background="@drawable/btn_favorites_normal" android:layout_width="178.0px" android:layout_height="108.0px" android:singleLine="true" android:layout_x="271.0px" />
+            <Button android:textSize="20.0dip" android:ellipsize="end" android:id="@id/channel_btn27" android:background="@drawable/btn_favorites_normal" android:layout_width="178.0px" android:layout_height="108.0px" android:singleLine="true" android:layout_x="480.0px" />
+        </AbsoluteLayout>
+    </AbsoluteLayout>
+</merge>

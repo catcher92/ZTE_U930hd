@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.broadcom.bt.app.fm.rx.CyclingPreference android:entries="@array/fm_audio_modes" android:title="@string/pref_menu_text_audio_mode" android:key="fm_pref_audio_mode" android:summary="@string/pref_menu_text_audio_mode_summary" android:defaultValue="0" android:dialogTitle="@string/pref_menu_text_audio_mode_dialog_title" android:entryValues="@array/fm_audio_modes_vals" />
+    <ListPreference android:entries="@array/fm_rds_modes" android:title="@string/pref_menu_text_rds_enabled" android:key="fm_pref_rds_enabled_2" android:summary="@string/pref_menu_text_rds_enabled_summary" android:defaultValue="0" android:dialogTitle="@string/pref_menu_text_rds_enabled_dialog_title" android:entryValues="@array/fm_rds_modes_vals" />
+    <CheckBoxPreference android:title="@string/pref_menu_text_af_enabled" android:key="fm_pref_af_enabled" android:summary="@string/pref_menu_text_af_enabled_summary" android:dependency="fm_pref_rds_enabled_2" android:defaultValue="false" />
+    <PreferenceScreen android:title="@string/pref_menu_text_advanced_settings" android:summary="@string/pref_menu_text_advanced_settings_summary"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <ListPreference android:entries="@array/fm_scan_steps" android:title="@string/pref_menu_text_scan_step" android:key="fm_pref_scan_step" android:summary="@string/pref_menu_text_scan_step_summary" android:defaultValue="0" android:dialogTitle="@string/pref_menu_text_scan_step_dialog_title" android:entryValues="@array/fm_scan_steps_vals" />
+        <CheckBoxPreference android:title="@string/pref_menu_text_live_polling" android:key="fm_pref_live_polling" android:summary="@string/pref_menu_text_live_polling_summary" android:defaultValue="false" />
+        <ListPreference android:entries="@array/fm_live_polling_intervals" android:title="@string/pref_menu_text_live_poll_int" android:key="fm_pref_live_polling_interval" android:summary="@string/pref_menu_text_live_poll_int_summary" android:defaultValue="2000" android:dialogTitle="@string/pref_menu_text_live_poll_int_dialog_title" android:entryValues="@array/fm_live_polling_intervals_vals" />
+        <ListPreference android:entries="@array/fm_nfl_modes" android:title="@string/pref_menu_text_nfl_mode" android:key="fm_pref_nfl_mode" android:summary="@string/pref_menu_text_nfl_mode_summary" android:defaultValue="1" android:dialogTitle="@string/pref_menu_text_nfl_mode_dialog_title" android:entryValues="@array/fm_nfl_modes_vals" />
+        <com.broadcom.bt.app.fm.FmSNRThresholdBar android:singleLine="true" android:title="@string/pref_menu_set_snr_thres_setting" android:key="fm_pref_snr_thres" android:defaultValue="0" android:dialogTitle="@string/pref_menu_set_snr_thres_value" />
+    </PreferenceScreen>
+</PreferenceScreen>

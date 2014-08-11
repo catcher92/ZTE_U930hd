@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<baiduwidgets
+  xmlns:launcher="http://schemas.android.com/apk/res/com.baidu.home2">
+    <baiduwidget launcher:baiduWidgetID="6" launcher:baiduWidgetLabel="@string/baidu_widget_weather_transparent" launcher:baiduWidgetPreview="@drawable/weather_transparent_widget_preview" launcher:baiduWidgetCellX="4" launcher:baiduWidgetCellY="2" launcher:baiduWidgetLayout="@layout/widget_weather_appwidget_transparent_layout" />
+    <baiduwidget launcher:baiduWidgetID="4" launcher:baiduWidgetLabel="@string/baidu_widget_switch" launcher:baiduWidgetPreview="@drawable/switch_widget_preview" launcher:baiduWidgetCellX="4" launcher:baiduWidgetCellY="1" launcher:baiduWidgetLayout="@layout/widget_switch_layout" />
+    <baiduwidget launcher:baiduWidgetID="9" launcher:baiduWidgetLabel="@string/qucik_launch" launcher:baiduWidgetPreview="@drawable/quick_launch_preview" launcher:baiduWidgetCellX="1" launcher:baiduWidgetCellY="1" launcher:baiduWidgetLayout="@layout/quick_launch_widget" />
+    <baiduwidget launcher:baiduWidgetID="7" launcher:baiduWidgetLabel="@string/theme_name" launcher:baiduWidgetPreview="@drawable/theme_widget_preview" launcher:baiduWidgetCellX="1" launcher:baiduWidgetCellY="1" launcher:baiduWidgetLayout="@layout/widget_theme" />
+    <baiduwidget launcher:baiduWidgetID="3" launcher:baiduWidgetLabel="@string/baidu_widget_onkey_small" launcher:baiduWidgetPreview="@drawable/onekey_widget_small_preview" launcher:baiduWidgetCellX="1" launcher:baiduWidgetCellY="1" launcher:baiduWidgetLayout="@layout/widget_onekey_small" />
+</baiduwidgets>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<add-resource type="string" name="reboot_reboot" />
+	<string name="reboot_reboot">reboot reboot</string>
+	<add-resource type="string" name="reboot_recovery" />
+	<string name="reboot_recovery">reboot recovery</string>
+</resources>

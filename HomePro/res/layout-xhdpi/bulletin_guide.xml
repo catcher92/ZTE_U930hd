@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/guideImage" android:paddingLeft="@dimen/bulletin_padding_left" android:paddingTop="@dimen/bulletin_padding_top" android:paddingRight="@dimen/bulletin_padding_right" android:paddingBottom="@dimen/bulletin_padding_bottom" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+    <ImageView android:layout_gravity="bottom|center" android:id="@id/startButton" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="92.0dip" android:src="@drawable/bulletin_guide_start_btn" />
+</FrameLayout>

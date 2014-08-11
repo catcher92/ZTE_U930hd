@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/call_restriction_setting"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:phone="http://schemas.android.com/apk/res/com.android.phone">
+    <CheckBoxPreference android:persistent="true" android:title="@string/barring_ao" android:key="button_ao_key" />
+    <CheckBoxPreference android:persistent="true" android:title="@string/barring_oi" android:key="button_oi_key" />
+    <CheckBoxPreference android:persistent="true" android:title="@string/barring_ox" android:key="button_ox_key" />
+    <CheckBoxPreference android:persistent="true" android:title="@string/barring_ai" android:key="button_ai_key" />
+    <CheckBoxPreference android:persistent="true" android:title="@string/barring_ir" android:key="button_ir_key" />
+    <Preference android:persistent="true" android:singleLine="true" android:title="@string/call_restriction_cancel" android:key="call_restriction_cancel" />
+    <com.android.phone.EditPinPreference android:hint="@string/bar_enter_password" android:title="@string/callbarring_passwd_change" android:key="callbarring_passwd" android:dialogTitle="@string/callbarring_passwd_change" android:dialogMessage="@string/passwd_enter_old" android:positiveButtonText="@string/passwd_enter_ok" android:negativeButtonText="@string/passwd_enter_cancel" />
+</PreferenceScreen>

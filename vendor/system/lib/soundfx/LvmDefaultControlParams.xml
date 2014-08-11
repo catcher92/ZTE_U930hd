@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2012 (http://www.altova.com) by Marco Forlin (NXP Software) -->
+
+<!-- Default wrapper parameters -->
+<LVM_WrapperParams xmlns="android" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="android LvmDefaultControlParams.xsd">
+    <VerboseLogging>
+        <Description>Activate verbose logging</Description>
+        <Type>LVM_UINT16</Type>
+        <Value>LVM_FALSE</Value>
+    </VerboseLogging>
+</LVM_WrapperParams>
+
+<!-- Default instance parameters -->
+<LVM_InstanceParams xmlns="android" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="android LvmDefaultControlParams.xsd">
+   <BufferMode>
+        <Description>Sets the Buffer Management mode</Description>
+        <Type>LVM_BufferMode_en</Type>
+        <Value>LVM_MANAGED_BUFFERS</Value>
+    </BufferMode>
+</LVM_InstanceParams>
+
+<!-- Default control parameters -->
+<LVM_ControlParams xmlns="android" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="android LvmDefaultControlParams.xsd">
+    <SpeakerType>
+        <Description>The internal speaker of the device will be LVM_MONO or LVM_STEREO. </Description>
+        <Type>LVM_SpeakerType_en</Type>
+        <Value>LVM_SPEAKER_MONO</Value>
+    </SpeakerType>
+    <SpeakerTuning>
+        <Description>The output device may be headphones or speakers. Three standard speaker types are included for the Virtualizer, small, medium and large. </Description>
+        <Type>LVM_OutputDeviceType_en</Type>
+        <Value>LVM_MOBILE_SPEAKERS_MEDIUM</Value>
+    </SpeakerTuning>
+    <VirtualizerType>
+        <Description>The LVM_Mode_en enumerated type is used to select the virtualizer type to use</Description>
+        <Type>LVM_VirtualizerType_en</Type>
+        <Value>LVM_CINEMASOUND_STEREO</Value>
+    </VirtualizerType>
+    <VirtualizerReverbLevel>
+        <Description>Controls the amount of reverb. The value 100 % provides the maximum possible reverb level. </Description>
+        <Type>LVM_UINT16</Type>
+        <Value>100</Value>
+    </VirtualizerReverbLevel>
+    <CS_EffectLevel>
+        <Description>Controls the amount of 3D widening. The value 32767 provides full 3D effect and 0 provides no effect. Three levels are predefined, LVM_CS_EFFECT_LOW (16384), LVM_CS_EFFECT_MEDIUM (24576) and LVM_CS_EFFECT_HIGH (32767).</Description>
+        <Type>LVM_INT16</Type>
+        <Value>32767</Value>
+    </CS_EffectLevel>
+    <BE_EffectLevel>
+        <Description>Sets the amount of bass enhancement required in dB</Description>
+        <Type>LVM_INT16</Type>
+        <Value>10</Value>
+    </BE_EffectLevel>
+    <BE_CenterFreq>
+        <Description>The LVM_BE_CentreFreq_en enumerated type is used to set the center frequency of the Bass Enhancement</Description>
+        <Type>LVM_BE_CentreFreq_en</Type>
+        <Value>LVM_BE_CENTRE_90Hz</Value>
+    </BE_CenterFreq>
+    <BE_HPF>
+        <Description>The LVM_BE_CentreFreq_en enumerated type is used to set the center frequency of the Bass Enhancement.</Description>
+        <Type>LVM_BE_FilterSelect_en</Type>
+        <Value>LVM_BE_HPF_ON</Value>
+    </BE_HPF>
+    <EQNB_LPF_Mode>
+        <Description>The LVM_EQNB_FilterMode_en enumerated type is used to enable and disable the Low Pass filter in the equaliser</Description>
+        <Type>LVM_EQNB_FilterMode_en</Type>
+        <Value>LVM_EQNB_FILTER_OFF</Value>
+    </EQNB_LPF_Mode>
+    <EQNB_LPF_CornerFreq>
+        <Description>Sets the 3dB corner frequency of the equaliser low pass filter</Description>
+        <Type>LVM_INT16</Type>
+        <Value>18000</Value>
+    </EQNB_LPF_CornerFreq>
+    <EQNB_HPF_Mode>
+        <Description>The LVM_EQNB_FilterMode_en enumerated type is used to enable and disable the High Pass filter in the equaliser</Description>
+        <Type>LVM_EQNB_FilterMode_en</Type>
+        <Value>LVM_EQNB_FILTER_OFF</Value>
+    </EQNB_HPF_Mode>
+    <EQNB_HPF_CornerFreq>
+        <Description>Sets the 3dB corner frequency of the equaliser high pass filter</Description>
+        <Type>LVM_INT16</Type>
+        <Value>50</Value>
+    </EQNB_HPF_CornerFreq>
+   <EQNB_Nbands>
+        <Description>Sets the number of active bands when the equaliser is enabled</Description>
+        <Type>LVM_UINT16</Type>
+        <Value>5</Value>
+    </EQNB_Nbands>
+    <BandDefinitions>
+        <Description>The LVM_EQNB_BandDef_t type is used for defining the band characteristics of the individual bands of the equaliser. The gain is in dBs, the frequency is in Hz and the Q factor is multiplied by 100, e.g. a Qfactor setting of 200 is equivalent to a Q of 2.00, the Gain Range is -15 to 15, the Frequency Range is 20 to 24000 and the Q factor range is 25 to 1200</Description>
+        <Type>LVM_EQNB_BandDef_t</Type>
+        <Band>
+            <Q_Factor>96</Q_Factor>
+            <Frequency>50</Frequency>
+            <Gain>0</Gain>
+        </Band>
+        <Band>
+            <Q_Factor>96</Q_Factor>
+            <Frequency>205</Frequency>
+            <Gain>0</Gain>
+        </Band>
+        <Band>
+            <Q_Factor>96</Q_Factor>
+            <Frequency>837</Frequency>
+            <Gain>0</Gain>
+        </Band>
+        <Band>
+            <Q_Factor>96</Q_Factor>
+            <Frequency>3427</Frequency>
+            <Gain>0</Gain>
+        </Band>
+        <Band>
+            <Q_Factor>96</Q_Factor>
+            <Frequency>14027</Frequency>
+            <Gain>0</Gain>
+        </Band>
+    </BandDefinitions>
+    <PSA_PeakDecayRate>
+        <Description>The LVM_PSA_DecaySpeed_en enumerated type is used to select the Decay speed of spectral peaks for PSA</Description>
+        <Type>LVM_PSA_DecaySpeed_en</Type>
+        <Value>LVM_PSA_SPEED_MEDIUM</Value>
+    </PSA_PeakDecayRate>
+    <PSA_NumBands>
+        <Description>Sets the Number of spectral Bands to be calculated</Description>
+        <Type>LVM_UINT16</Type>
+        <Value>32</Value>
+    </PSA_NumBands>
+</LVM_ControlParams>

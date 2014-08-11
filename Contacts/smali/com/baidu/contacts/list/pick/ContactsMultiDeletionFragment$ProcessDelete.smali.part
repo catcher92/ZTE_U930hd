@@ -1,0 +1,530 @@
+.method protected varargs doInBackground([Ljava/lang/Void;)Ljava/lang/Void;
+    .locals 25
+    .parameter "params"
+
+    .prologue
+    .line 317
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/baidu/contacts/list/pick/ContactsMultiDeletionFragment$ProcessDelete;->wakeLock:Landroid/os/PowerManager$WakeLock;
+
+    move-object/from16 v22, v0
+
+    if-eqz v22, :cond_0
+
+    .line 318
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/baidu/contacts/list/pick/ContactsMultiDeletionFragment$ProcessDelete;->wakeLock:Landroid/os/PowerManager$WakeLock;
+
+    move-object/from16 v22, v0
+
+    invoke-virtual/range {v22 .. v22}, Landroid/os/PowerManager$WakeLock;->acquire()V
+
+    .line 321
+    :cond_0
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/baidu/contacts/list/pick/ContactsMultiDeletionFragment$ProcessDelete;->this$0:Lcom/baidu/contacts/list/pick/ContactsMultiDeletionFragment;
+
+    move-object/from16 v22, v0
+
+    #getter for: Lcom/baidu/contacts/list/pick/ContactsMultiDeletionFragment;->mItems:[Lcom/baidu/contacts/list/pick/ContactLongItem;
+    invoke-static/range {v22 .. v22}, Lcom/baidu/contacts/list/pick/ContactsMultiDeletionFragment;->access$1200(Lcom/baidu/contacts/list/pick/ContactsMultiDeletionFragment;)[Lcom/baidu/contacts/list/pick/ContactLongItem;
+
+    move-result-object v13
+
+    .line 322
+    .local v13, items:[Lcom/baidu/contacts/list/pick/ContactLongItem;
+    if-eqz v13, :cond_1
+
+    array-length v0, v13
+
+    move/from16 v22, v0
+
+    if-nez v22, :cond_2
+
+    .line 323
+    :cond_1
+    const/16 v22, 0x0
+
+    .line 400
+    :goto_0
+    return-object v22
+
+    .line 326
+    :cond_2
+    new-instance v17, Ljava/lang/StringBuilder;
+
+    invoke-direct/range {v17 .. v17}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 327
+    .local v17, selection:Ljava/lang/StringBuilder;
+    new-instance v18, Ljava/util/ArrayList;
+
+    invoke-direct/range {v18 .. v18}, Ljava/util/ArrayList;-><init>()V
+
+    .line 329
+    .local v18, selectionArgs:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Ljava/lang/String;>;"
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/baidu/contacts/list/pick/ContactsMultiDeletionFragment$ProcessDelete;->this$0:Lcom/baidu/contacts/list/pick/ContactsMultiDeletionFragment;
+
+    move-object/from16 v22, v0
+
+    #getter for: Lcom/baidu/contacts/list/pick/ContactsMultiDeletionFragment;->mAccount:Landroid/accounts/Account;
+    invoke-static/range {v22 .. v22}, Lcom/baidu/contacts/list/pick/ContactsMultiDeletionFragment;->access$1300(Lcom/baidu/contacts/list/pick/ContactsMultiDeletionFragment;)Landroid/accounts/Account;
+
+    move-result-object v2
+
+    .line 330
+    .local v2, account:Landroid/accounts/Account;
+    if-eqz v2, :cond_3
+
+    .line 331
+    const-string v22, "(account_name=? AND account_type=?"
+
+    move-object/from16 v0, v17
+
+    move-object/from16 v1, v22
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 332
+    iget-object v0, v2, Landroid/accounts/Account;->name:Ljava/lang/String;
+
+    move-object/from16 v22, v0
+
+    move-object/from16 v0, v18
+
+    move-object/from16 v1, v22
+
+    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 333
+    iget-object v0, v2, Landroid/accounts/Account;->type:Ljava/lang/String;
+
+    move-object/from16 v22, v0
+
+    move-object/from16 v0, v18
+
+    move-object/from16 v1, v22
+
+    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 334
+    const-string v22, ")"
+
+    move-object/from16 v0, v17
+
+    move-object/from16 v1, v22
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 337
+    :cond_3
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/baidu/contacts/list/pick/ContactsMultiDeletionFragment$ProcessDelete;->this$0:Lcom/baidu/contacts/list/pick/ContactsMultiDeletionFragment;
+
+    move-object/from16 v22, v0
+
+    #getter for: Lcom/baidu/contacts/list/pick/ContactsMultiDeletionFragment;->mContext:Landroid/content/Context;
+    invoke-static/range {v22 .. v22}, Lcom/baidu/contacts/list/pick/ContactsMultiDeletionFragment;->access$1100(Lcom/baidu/contacts/list/pick/ContactsMultiDeletionFragment;)Landroid/content/Context;
+
+    move-result-object v22
+
+    invoke-virtual/range {v22 .. v22}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v15
+
+    .line 338
+    .local v15, resolver:Landroid/content/ContentResolver;
+    new-instance v14, Ljava/util/ArrayList;
+
+    invoke-direct {v14}, Ljava/util/ArrayList;-><init>()V
+
+    .line 339
+    .local v14, optionsMap:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Landroid/content/ContentProviderOperation;>;"
+    const/4 v5, 0x0
+
+    .line 341
+    .local v5, builder:Landroid/content/ContentProviderOperation$Builder;
+    invoke-virtual/range {v17 .. v17}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v19
+
+    .line 342
+    .local v19, selectionString:Ljava/lang/String;
+    const/16 v22, 0x0
+
+    move/from16 v0, v22
+
+    new-array v0, v0, [Ljava/lang/String;
+
+    move-object/from16 v22, v0
+
+    move-object/from16 v0, v18
+
+    move-object/from16 v1, v22
+
+    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
+
+    move-result-object v3
+
+    check-cast v3, [Ljava/lang/String;
+
+    .line 343
+    .local v3, argsStringArray:[Ljava/lang/String;
+    const/4 v8, 0x0
+
+    .line 344
+    .local v8, i:I
+    move-object/from16 v0, p0
+
+    iget-boolean v0, v0, Lcom/baidu/contacts/list/pick/ContactsMultiDeletionFragment$ProcessDelete;->isRestart:Z
+
+    move/from16 v22, v0
+
+    if-eqz v22, :cond_4
+
+    .line 345
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/baidu/contacts/list/pick/ContactsMultiDeletionFragment$ProcessDelete;->this$0:Lcom/baidu/contacts/list/pick/ContactsMultiDeletionFragment;
+
+    move-object/from16 v22, v0
+
+    #getter for: Lcom/baidu/contacts/list/pick/ContactsMultiDeletionFragment;->mStartPosition:I
+    invoke-static/range {v22 .. v22}, Lcom/baidu/contacts/list/pick/ContactsMultiDeletionFragment;->access$600(Lcom/baidu/contacts/list/pick/ContactsMultiDeletionFragment;)I
+
+    move-result v8
+
+    .line 347
+    :cond_4
+    new-instance v4, Ljava/util/ArrayList;
+
+    invoke-direct {v4}, Ljava/util/ArrayList;-><init>()V
+
+    .line 348
+    .local v4, backup:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Ljava/lang/Long;>;"
+    array-length v0, v13
+
+    move/from16 v21, v0
+
+    .line 349
+    .local v21, size:I
+    :goto_1
+    move/from16 v0, v21
+
+    if-ge v8, v0, :cond_5
+
+    .line 350
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/baidu/contacts/list/pick/ContactsMultiDeletionFragment$ProcessDelete;->this$0:Lcom/baidu/contacts/list/pick/ContactsMultiDeletionFragment;
+
+    move-object/from16 v22, v0
+
+    #getter for: Lcom/baidu/contacts/list/pick/ContactsMultiDeletionFragment;->mCanceled:Z
+    invoke-static/range {v22 .. v22}, Lcom/baidu/contacts/list/pick/ContactsMultiDeletionFragment;->access$200(Lcom/baidu/contacts/list/pick/ContactsMultiDeletionFragment;)Z
+
+    move-result v22
+
+    if-eqz v22, :cond_6
+
+    .line 400
+    :cond_5
+    const/16 v22, 0x0
+
+    goto/16 :goto_0
+
+    .line 351
+    :cond_6
+    aget-object v12, v13, v8
+
+    .line 352
+    .local v12, item:Lcom/baidu/contacts/list/pick/ContactLongItem;
+    iget-wide v6, v12, Lcom/baidu/contacts/list/pick/ContactLongItem;->mId:J
+
+    .line 353
+    .local v6, contactId:J
+    iget v11, v12, Lcom/baidu/contacts/list/pick/ContactLongItem;->mIndex:I
+
+    .line 354
+    .local v11, index:I
+    if-ltz v11, :cond_9
+
+    .line 368
+    invoke-static {v6, v7}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+
+    move-result-object v22
+
+    move-object/from16 v0, v22
+
+    invoke-virtual {v4, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 375
+    :goto_2
+    invoke-virtual {v4}, Ljava/util/ArrayList;->size()I
+
+    move-result v22
+
+    if-lez v22, :cond_b
+
+    invoke-virtual {v4}, Ljava/util/ArrayList;->size()I
+
+    move-result v22
+
+    const/16 v23, 0xa
+
+    move/from16 v0, v22
+
+    move/from16 v1, v23
+
+    if-ge v0, v1, :cond_7
+
+    add-int/lit8 v22, v21, -0x1
+
+    move/from16 v0, v22
+
+    if-ne v8, v0, :cond_b
+
+    .line 377
+    :cond_7
+    invoke-static {v15, v4}, Lcom/baidu/contacts/SubContactsUtils;->querySimContacts(Landroid/content/ContentResolver;Ljava/util/List;)Ljava/util/HashMap;
+
+    move-result-object v20
+
+    .line 378
+    .local v20, simMaps:Ljava/util/HashMap;,"Ljava/util/HashMap<Ljava/lang/Long;Lcom/baidu/contacts/util/SimCardUtils$SIMContact;>;"
+    invoke-virtual/range {v20 .. v20}, Ljava/util/HashMap;->keySet()Ljava/util/Set;
+
+    move-result-object v22
+
+    invoke-interface/range {v22 .. v22}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
+
+    move-result-object v9
+
+    .local v9, i$:Ljava/util/Iterator;
+    :cond_8
+    :goto_3
+    invoke-interface {v9}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v22
+
+    if-eqz v22, :cond_a
+
+    invoke-interface {v9}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v10
+
+    check-cast v10, Ljava/lang/Long;
+
+    .line 380
+    .local v10, id:Ljava/lang/Long;
+    move-object/from16 v0, v20
+
+    invoke-virtual {v0, v10}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v22
+
+    check-cast v22, Lcom/baidu/contacts/util/SimCardUtils$SIMContact;
+
+    move-object/from16 v0, v22
+
+    invoke-static {v15, v0}, Lcom/baidu/contacts/SubContactsUtils;->deleteSimContact(Landroid/content/ContentResolver;Lcom/baidu/contacts/util/SimCardUtils$SIMContact;)I
+
+    move-result v16
+
+    .line 381
+    .local v16, ret:I
+    const/16 v22, 0x1
+
+    move/from16 v0, v16
+
+    move/from16 v1, v22
+
+    if-ne v0, v1, :cond_8
+
+    .line 382
+    sget-object v22, Landroid/provider/ContactsContract$Contacts;->CONTENT_URI:Landroid/net/Uri;
+
+    invoke-virtual {v10}, Ljava/lang/Long;->longValue()J
+
+    move-result-wide v23
+
+    invoke-static/range {v22 .. v24}, Landroid/content/ContentUris;->withAppendedId(Landroid/net/Uri;J)Landroid/net/Uri;
+
+    move-result-object v22
+
+    invoke-static/range {v22 .. v22}, Landroid/content/ContentProviderOperation;->newDelete(Landroid/net/Uri;)Landroid/content/ContentProviderOperation$Builder;
+
+    move-result-object v5
+
+    .line 383
+    move-object/from16 v0, v19
+
+    invoke-virtual {v5, v0, v3}, Landroid/content/ContentProviderOperation$Builder;->withSelection(Ljava/lang/String;[Ljava/lang/String;)Landroid/content/ContentProviderOperation$Builder;
+
+    .line 384
+    invoke-virtual {v5}, Landroid/content/ContentProviderOperation$Builder;->build()Landroid/content/ContentProviderOperation;
+
+    move-result-object v22
+
+    move-object/from16 v0, v22
+
+    invoke-virtual {v14, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    goto :goto_3
+
+    .line 371
+    .end local v9           #i$:Ljava/util/Iterator;
+    .end local v10           #id:Ljava/lang/Long;
+    .end local v16           #ret:I
+    .end local v20           #simMaps:Ljava/util/HashMap;,"Ljava/util/HashMap<Ljava/lang/Long;Lcom/baidu/contacts/util/SimCardUtils$SIMContact;>;"
+    :cond_9
+    sget-object v22, Landroid/provider/ContactsContract$Contacts;->CONTENT_URI:Landroid/net/Uri;
+
+    move-object/from16 v0, v22
+
+    invoke-static {v0, v6, v7}, Landroid/content/ContentUris;->withAppendedId(Landroid/net/Uri;J)Landroid/net/Uri;
+
+    move-result-object v22
+
+    invoke-static/range {v22 .. v22}, Landroid/content/ContentProviderOperation;->newDelete(Landroid/net/Uri;)Landroid/content/ContentProviderOperation$Builder;
+
+    move-result-object v5
+
+    .line 372
+    move-object/from16 v0, v19
+
+    invoke-virtual {v5, v0, v3}, Landroid/content/ContentProviderOperation$Builder;->withSelection(Ljava/lang/String;[Ljava/lang/String;)Landroid/content/ContentProviderOperation$Builder;
+
+    .line 373
+    invoke-virtual {v5}, Landroid/content/ContentProviderOperation$Builder;->build()Landroid/content/ContentProviderOperation;
+
+    move-result-object v22
+
+    move-object/from16 v0, v22
+
+    invoke-virtual {v14, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    goto :goto_2
+
+    .line 387
+    .restart local v9       #i$:Ljava/util/Iterator;
+    .restart local v20       #simMaps:Ljava/util/HashMap;,"Ljava/util/HashMap<Ljava/lang/Long;Lcom/baidu/contacts/util/SimCardUtils$SIMContact;>;"
+    :cond_a
+    invoke-virtual {v4}, Ljava/util/ArrayList;->clear()V
+
+    .line 389
+    .end local v9           #i$:Ljava/util/Iterator;
+    .end local v20           #simMaps:Ljava/util/HashMap;,"Ljava/util/HashMap<Ljava/lang/Long;Lcom/baidu/contacts/util/SimCardUtils$SIMContact;>;"
+    :cond_b
+    invoke-virtual {v14}, Ljava/util/ArrayList;->size()I
+
+    move-result v22
+
+    const/16 v23, 0xa
+
+    move/from16 v0, v22
+
+    move/from16 v1, v23
+
+    if-ge v0, v1, :cond_c
+
+    add-int/lit8 v22, v21, -0x1
+
+    move/from16 v0, v22
+
+    if-ne v8, v0, :cond_d
+
+    .line 391
+    :cond_c
+    :try_start_0
+    const-string v22, "com.android.contacts"
+
+    move-object/from16 v0, v22
+
+    invoke-virtual {v15, v0, v14}, Landroid/content/ContentResolver;->applyBatch(Ljava/lang/String;Ljava/util/ArrayList;)[Landroid/content/ContentProviderResult;
+
+    .line 392
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/baidu/contacts/list/pick/ContactsMultiDeletionFragment$ProcessDelete;->this$0:Lcom/baidu/contacts/list/pick/ContactsMultiDeletionFragment;
+
+    move-object/from16 v22, v0
+
+    add-int/lit8 v23, v8, 0x1
+
+    #setter for: Lcom/baidu/contacts/list/pick/ContactsMultiDeletionFragment;->mStartPosition:I
+    invoke-static/range {v22 .. v23}, Lcom/baidu/contacts/list/pick/ContactsMultiDeletionFragment;->access$602(Lcom/baidu/contacts/list/pick/ContactsMultiDeletionFragment;I)I
+
+    .line 393
+    const/16 v22, 0x2
+
+    move/from16 v0, v22
+
+    new-array v0, v0, [Ljava/lang/Integer;
+
+    move-object/from16 v22, v0
+
+    const/16 v23, 0x0
+
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/baidu/contacts/list/pick/ContactsMultiDeletionFragment$ProcessDelete;->this$0:Lcom/baidu/contacts/list/pick/ContactsMultiDeletionFragment;
+
+    move-object/from16 v24, v0
+
+    #getter for: Lcom/baidu/contacts/list/pick/ContactsMultiDeletionFragment;->mStartPosition:I
+    invoke-static/range {v24 .. v24}, Lcom/baidu/contacts/list/pick/ContactsMultiDeletionFragment;->access$600(Lcom/baidu/contacts/list/pick/ContactsMultiDeletionFragment;)I
+
+    move-result v24
+
+    invoke-static/range {v24 .. v24}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v24
+
+    aput-object v24, v22, v23
+
+    const/16 v23, 0x1
+
+    invoke-static/range {v21 .. v21}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v24
+
+    aput-object v24, v22, v23
+
+    move-object/from16 v0, p0
+
+    move-object/from16 v1, v22
+
+    invoke-virtual {v0, v1}, Lcom/baidu/contacts/list/pick/ContactsMultiDeletionFragment$ProcessDelete;->publishProgress([Ljava/lang/Object;)V
+
+    .line 394
+    invoke-virtual {v14}, Ljava/util/ArrayList;->clear()V
+    :try_end_0
+    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_1
+    .catch Landroid/content/OperationApplicationException; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 349
+    :cond_d
+    :goto_4
+    add-int/lit8 v8, v8, 0x1
+
+    goto/16 :goto_1
+
+    .line 396
+    :catch_0
+    move-exception v22
+
+    goto :goto_4
+
+    .line 395
+    :catch_1
+    move-exception v22
+
+    goto :goto_4
+.end method

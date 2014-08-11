@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="chanel_text_color">#ffffffff</color>
+    <color name="chanel_border_color">#ffff0000</color>
+    <color name="current_chanel_color">#fffc9e00</color>
+    <color name="chanel_save_border_color">#ff00cdef</color>
+    <color name="chanel_normal_color">#ffcccccc</color>
+    <color name="frequency_range_color">#ff545454</color>
+</resources>

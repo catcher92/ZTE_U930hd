@@ -1,0 +1,136 @@
+.method public static deleteSimContact(Landroid/content/ContentResolver;Lcom/baidu/contacts/util/SimCardUtils$SIMContact;)I
+    .locals 7
+    .parameter "resolver"
+    .parameter "contact"
+
+    .prologue
+    const/4 v4, 0x1
+
+    .line 357
+    const/4 v1, 0x0
+
+    .line 358
+    .local v1, success:I
+    if-eqz p1, :cond_0
+
+    iget v5, p1, Lcom/baidu/contacts/util/SimCardUtils$SIMContact;->slotId:I
+
+    invoke-static {v5}, Lcom/baidu/contacts/util/SimCardUtils;->isSimStateReady(I)Z
+
+    move-result v5
+
+    if-nez v5, :cond_1
+
+    .line 360
+    :cond_0
+    const-string v4, "SubContactsUtils"
+
+    const-string v5, "delete sim contact failed."
+
+    invoke-static {v4, v5}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
+
+    move v2, v1
+
+    .line 374
+    .end local v1           #success:I
+    .local v2, success:I
+    :goto_0
+    return v2
+
+    .line 363
+    .end local v2           #success:I
+    .restart local v1       #success:I
+    :cond_1
+    invoke-virtual {p1}, Lcom/baidu/contacts/util/SimCardUtils$SIMContact;->buildWhere()Ljava/lang/String;
+
+    move-result-object v3
+
+    .line 364
+    .local v3, where:Ljava/lang/String;
+    iget v5, p1, Lcom/baidu/contacts/util/SimCardUtils$SIMContact;->slotId:I
+
+    invoke-static {v5}, Lcom/baidu/contacts/util/SimCardUtils$SimUri;->getDefaultUri(I)Landroid/net/Uri;
+
+    move-result-object v5
+
+    const/4 v6, 0x0
+
+    invoke-virtual {p0, v5, v3, v6}, Landroid/content/ContentResolver;->delete(Landroid/net/Uri;Ljava/lang/String;[Ljava/lang/String;)I
+
+    move-result v0
+
+    .line 367
+    .local v0, ret:I
+    if-lez v0, :cond_2
+
+    move v1, v4
+
+    .line 368
+    :goto_1
+    if-ne v1, v4, :cond_3
+
+    .line 369
+    const-string v4, "SubContactsUtils"
+
+    new-instance v5, Ljava/lang/StringBuilder;
+
+    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v6, "delete sim contact success, "
+
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v5
+
+    invoke-virtual {v5, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v5
+
+    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v5
+
+    invoke-static {v4, v5}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    :goto_2
+    move v2, v1
+
+    .line 374
+    .end local v1           #success:I
+    .restart local v2       #success:I
+    goto :goto_0
+
+    .line 367
+    .end local v2           #success:I
+    .restart local v1       #success:I
+    :cond_2
+    const/4 v1, 0x0
+
+    goto :goto_1
+
+    .line 371
+    :cond_3
+    const-string v4, "SubContactsUtils"
+
+    new-instance v5, Ljava/lang/StringBuilder;
+
+    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v6, "delete sim contact failed, "
+
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v5
+
+    invoke-virtual {v5, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v5
+
+    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v5
+
+    invoke-static {v4, v5}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
+
+    goto :goto_2
+.end method

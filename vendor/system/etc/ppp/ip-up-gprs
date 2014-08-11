@@ -1,0 +1,32 @@
+#!/system/bin/sh
+
+# Use interface name if linkname is not available
+NAME=$IFNAME
+
+/system/bin/setprop "net.$NAME.dns1" "$DNS1"
+/system/bin/setprop "net.$NAME.dns2" "$DNS2" 
+
+/system/bin/setprop "net.$NAME.local-ip" "$IPLOCAL" 
+/system/bin/setprop "net.$NAME.remote-ip" "$IPREMOTE" 
+
+PPPD_INFO_FILE="/tmp/"$IFNAME".tmp"
+echo ""                                 >  $PPPD_INFO_FILE
+echo "IPLOCAL        = $IPLOCAL"        >> $PPPD_INFO_FILE
+echo "IPREMOTE       = $IPREMOTE"       >> $PPPD_INFO_FILE
+echo "DNS1           = $DNS1"           >> $PPPD_INFO_FILE
+echo "DNS2           = $DNS2"           >> $PPPD_INFO_FILE
+echo "USEPEERDNS     = $USEPEERDNS"     >> $PPPD_INFO_FILE
+echo "SPEED          = $SPEED"          >> $PPPD_INFO_FILE
+echo "PPPLOGNAME     = $PPPLOGNAME"     >> $PPPD_INFO_FILE
+echo "DEVICE         = $DEVICE"         >> $PPPD_INFO_FILE
+echo "PPPD_PID       = $PPPD_PID"       >> $PPPD_INFO_FILE
+echo "IFNAME         = $IFNAME"         >> $PPPD_INFO_FILE
+
+
+#/system/xbin/iproute2 route add "$DNS1" dev "$IFNAME" preference 200
+#/system/xbin/iproute2 route add "$DNS2" dev "$IFNAME" preference 201
+#/opl/telephony/bin/busybox route add default metric 2 $IFNAME 
+ROUTE_INFO_NAME=""$IFNAME".ps"
+/system/xbin/iproute2 rule add from "$IPLOCAL" table "$ROUTE_INFO_NAME"
+/system/xbin/iproute2 route add default via "$IPLOCAL" dev "$IFNAME" table "$ROUTE_INFO_NAME"
+/system/xbin/iproute2 route flush cache

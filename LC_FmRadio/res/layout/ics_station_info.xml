@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="top" android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/station_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.0">
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/station_frequency_row" android:paddingTop="5.0px" android:paddingBottom="5.0px" android:layout_width="fill_parent" android:layout_height="120.0dip" android:layout_alignWithParentIfMissing="true">
+            <RelativeLayout android:id="@id/second_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="2.0px" android:layout_marginTop="2.0px" android:layout_marginRight="2.0px" android:layout_marginBottom="2.0px">
+                <TextView android:textSize="20.0pt" android:textColor="@color/frequency_range_color" android:id="@id/sleep_msg_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0px" android:layout_below="@id/image_frequency_tv_5" android:layout_centerHorizontal="true" />
+                <com.broadcom.bt.app.fm.drag.DragTextView android:textAppearance="?android:textAppearanceLarge" android:textSize="64.0px" android:textColor="@color/current_chanel_color" android:id="@id/prog_frequency_tv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/default_frequency" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+                <com.broadcom.bt.app.fm.drag.DragContainer android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/image_frequency_tv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+                    <ImageView android:id="@id/image_frequency_tv_1" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <ImageView android:id="@id/image_frequency_tv_2" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <ImageView android:id="@id/image_frequency_tv_3" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <ImageView android:id="@id/image_frequency_tv_4" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <ImageView android:id="@id/image_frequency_tv_5" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mhz" />
+                </com.broadcom.bt.app.fm.drag.DragContainer>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</merge>

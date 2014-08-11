@@ -1,0 +1,13 @@
+version: 1.5.2
+apkFileName: LC_FmRadio.apk
+isFrameworkApk: false
+usesFramework:
+  ids:
+  - 1
+sdkInfo:
+  minSdkVersion: '11'
+  targetSdkVersion: '15'
+packageInfo:
+  cur_package: com.broadcom.bt.app.fm
+  orig_package: com.broadcom.bt.app.fm
+compressionType: false

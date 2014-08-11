@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:phone="http://schemas.android.com/apk/res/com.android.phone">
+    <TextView android:id="@id/mTextView" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ImageView android:id="@id/mImageView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="50.0px" android:layout_below="@id/mTextView" />
+    <Button android:id="@id/starupButton" android:visibility="gone" android:layout_width="240.0px" android:layout_height="wrap_content" android:layout_marginTop="20.0px" android:layout_marginRight="40.0px" android:text="@string/alternative_Enable" android:layout_below="@id/mImageView" android:layout_alignParentRight="true" />
+    <Button android:id="@id/mButton" android:layout_width="100.0px" android:layout_height="wrap_content" android:layout_marginLeft="40.0px" android:layout_marginTop="20.0px" android:layout_marginRight="50.0px" android:text="@string/alternative_Pick" android:layout_below="@id/mImageView" android:layout_alignParentLeft="true" />
+    <Button android:id="@id/rButton" android:layout_width="100.0px" android:layout_height="wrap_content" android:layout_marginRight="40.0px" android:text="@string/alternative_Disable" android:layout_toRightOf="@id/mButton" android:layout_alignTop="@id/mButton" android:layout_alignParentRight="true" />
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/ic_sound_holo_dark" android:id="@id/holdButton" android:title="@string/menu_hold" />
+    <item android:icon="@drawable/ic_sound_holo_dark" android:id="@id/unholdButton" android:title="@string/menu_unhold" />
+    <item android:icon="@drawable/ic_sound_holo_dark" android:id="@id/swapButton" android:title="@string/menu_swap" />
+    <item android:icon="@drawable/ic_sound_holo_dark" android:id="@id/menuRecord" android:title="@string/menu_record" />
+    <item android:icon="@drawable/ic_sound_holo_dark" android:id="@id/menuUnrecord" android:title="@string/menu_unrecord" />
+    <item android:icon="@drawable/ic_sound_holo_dark" android:id="@id/menuAnswerAndHold" android:title="@string/menu_answer_and_hold" />
+    <item android:icon="@drawable/ic_sound_holo_dark" android:id="@id/menuAnswerAndEnd" android:title="@string/menu_answer_and_end" />
+</menu>

@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+** Copyright 2006, Google Inc.
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*      http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+-->
+<apns version="7">
+
+	<apn mcc="460"
+		mnc="00"
+		carrier="CMWAP"
+		apn="cmwap"
+		user=""
+		server=""
+		password=""
+		proxy="10.0.0.172"
+		port="80"
+		mmsproxy=""
+		mmsport=""
+		mmsc=""
+		type="default,wap,tv,cmdm,streaming"
+		visible ="1"
+		preloaded ="1"
+		/>
+
+	<apn mcc="460"
+		mnc="00"
+		carrier="CMNET"
+		apn="cmnet"
+		user="cmnet"
+		server=""
+		password="cmnet"
+		proxy=""
+		port=""
+		mmsproxy=""
+		mmsport=""
+		mmsc=""
+		type="default,internet"
+		visible ="1"
+		preloaded ="1"
+		/>
+
+    <apn mcc="460"
+        mnc="00"
+        carrier="CMCC MMS"
+        apn="cmwap"
+        user=""
+        server=""
+        password=""
+		proxy="10.0.0.172"
+        port="80"
+        mmsproxy="10.0.0.172"
+        mmsport="80"
+        mmsc="http://mmsc.monternet.com"
+        type="mms"
+        visible ="1"
+        preloaded ="1"
+        />
+
+    <!-- For support CMSIP APN,add by zhoujianheng,2012-07-02 start -->
+	<apn mcc="460"
+		mnc="00"
+		carrier="CMSIP"
+		apn="cmsip"
+		user=""
+		server=""
+		password=""
+		proxy=""
+		port=""
+		mmsproxy=""
+		mmsport=""
+		mmsc=""
+		type="supl"
+		visible ="1"
+		preloaded ="1"
+		/>
+    <!-- For support CMSIP APN,add by zhoujianheng,2012-07-02 end -->
+
+	<apn mcc="460"
+		mnc="02"
+		carrier="CMWAP"
+		apn="cmwap"
+		user=""
+		server=""
+		password=""
+		proxy="10.0.0.172"
+		port="80"
+		mmsproxy=""
+		mmsport=""
+		mmsc=""
+		type="default,wap,tv,cmdm,streaming"
+		visible ="1"
+		preloaded ="1"
+		/>
+
+	<apn mcc="460"
+		mnc="02"
+		carrier="CMNET"
+		apn="cmnet"
+		user="cmnet"
+		server=""
+		password="cmnet"
+		proxy=""
+		port=""
+		mmsproxy=""
+		mmsport=""
+		mmsc=""
+		type="default,internet"
+		visible ="1"
+		preloaded ="1"
+		/>
+
+	<apn mcc="460"
+		mnc="02"
+		carrier="CMCC MMS"
+		apn="cmwap"
+		user=""
+		server=""
+		password=""
+		proxy="10.0.0.172"
+		port="80"
+		mmsproxy="10.0.0.172"
+		mmsport="80"
+		mmsc="http://mmsc.monternet.com"
+		type="mms"
+		visible ="1"
+		preloaded ="1"
+		/>
+
+    <!-- For support CMSIP APN,add by zhoujianheng,2012-07-02 start -->
+	<apn mcc="460"
+		mnc="02"
+		carrier="CMSIP"
+		apn="cmsip"
+		user=""
+		server=""
+		password=""
+		proxy=""
+		port=""
+		mmsproxy=""
+		mmsport=""
+		mmsc=""
+		type="supl"
+		visible ="1"
+		preloaded ="1"
+		/>
+    <!-- For support CMSIP APN,add by zhoujianheng,2012-07-02 end -->
+		
+	<apn mcc="460"
+		mnc="01"
+		carrier="CUCC WAP"
+		apn="uniwap"
+		user=""
+		server=""
+		password=""
+		proxy="10.0.0.172"
+		port="80"
+		mmsproxy=""
+		mmsport=""
+		mmsc=""
+		type="default,wap,tv"
+		visible ="1"
+		preloaded ="1"
+		/>
+
+	<apn mcc="460"
+		mnc="01"
+		carrier="CUCC NET"
+		apn="uninet"
+		user=""
+		server=""
+		password=""
+		proxy=""
+		port=""
+		mmsproxy=""
+		mmsport=""
+		mmsc=""
+		type="default,internet"
+		visible ="1"
+		preloaded ="1"
+		/>
+
+    <apn mcc="460"
+        mnc="01"
+        carrier="CUCC MMS"
+		apn="uniwap"
+		user=""
+		server=""
+		password=""
+		proxy="10.0.0.172"
+		port="80"
+		mmsproxy="10.0.0.172"
+		mmsport="80"
+		mmsc="http://mmsc.myuni.com.cn"
+		type="mms"
+		visible ="1"
+		preloaded ="1"
+		/>
+	<apn mcc="460"
+		mnc="07"
+		carrier="CMWAP"
+		apn="cmwap"
+		user=""
+		server=""
+		password=""
+		proxy="10.0.0.172"
+		port="80"
+		mmsproxy=""
+		mmsport=""
+		mmsc=""
+		type="default,wap,tv,cmdm,streaming"
+		visible ="1"
+		preloaded ="1"
+		/>
+
+	<apn mcc="460"
+		mnc="07"
+		carrier="CMNET"
+		apn="cmnet"
+		user="cmnet"
+		server=""
+		password="cmnet"
+		proxy=""
+		port=""
+		mmsproxy=""
+		mmsport=""
+		mmsc=""
+		type="default,internet"
+		visible ="1"
+		preloaded ="1"
+		/>
+
+    <apn mcc="460"
+        mnc="07"
+        carrier="CMCC MMS"
+        apn="cmwap"
+        user=""
+        server=""
+        password=""
+        proxy="10.0.0.172"
+        port="80"
+        mmsproxy="10.0.0.172"
+        mmsport="80"
+        mmsc="http://mmsc.monternet.com"
+        type="mms"
+        visible ="1"
+        preloaded ="1"
+		/>
+
+    <!-- For support CMSIP APN,add by zhoujianheng,2012-07-02 start -->
+	<apn mcc="460"
+		mnc="07"
+		carrier="CMSIP"
+		apn="cmsip"
+		user=""
+		server=""
+		password=""
+		proxy=""
+		port=""
+		mmsproxy=""
+		mmsport=""
+		mmsc=""
+		type="supl"
+		visible ="1"
+		preloaded ="1"
+		/>
+    <!-- For support CMSIP APN,add by zhoujianheng,2012-07-02 end -->
+
+	<apn carrier="Android"
+		mcc="310"
+		mnc="995"
+		apn="internet"
+		user="*"
+		server="*"
+		password="*"
+		mmsc="null"
+		/>
+
+	<apn carrier="TelKila"
+		mcc="310"
+		mnc="260"
+		apn="internet"
+		user="*"
+		server="*"
+		password="*"
+		mmsc="null"
+		/>
+
+</apns>
+

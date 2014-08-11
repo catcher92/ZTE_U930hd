@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:focusable="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/RelativeLayout01" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <EditText android:textSize="35.0px" android:id="@id/NumInput" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="13.0px" android:layout_marginTop="10.0dip" android:layout_marginRight="23.0px" android:singleLine="true" />
+        <TextView android:textSize="29.0px" android:textColor="#ffc0c0c0" android:layout_gravity="left" android:id="@id/error_number" android:paddingLeft="15.0px" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/errorPhone" />
+        <Button android:textSize="35.0px" android:textColor="#ff000000" android:id="@id/ClearButton" android:background="@drawable/clear_button" android:focusable="false" android:layout_width="wrap_content" android:layout_height="70.0px" android:layout_marginLeft="575.0px" android:layout_marginTop="10.0dip" android:layout_marginRight="23.0px" android:text="@string/clear" android:singleLine="true" />
+    </LinearLayout>
+    <ListView android:id="@id/ListViewlocator" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" />
+    <TextView android:textSize="35.0px" android:textColor="#ffc0c0c0" android:id="@id/lawText" android:paddingLeft="20.0px" android:paddingRight="10.0dip" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="50.0dip" android:text="@id/lawinfo" />
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.internal.policy.impl.ItemImageViewManager android:layout_gravity="center" android:id="@id/item_image_view" android:visibility="invisible" android:layout_width="320.0dip" android:layout_height="320.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/item_bg1" android:background="@drawable/item_bg_01" android:layout_width="160.0dip" android:layout_height="160.0dip">
+        <com.android.internal.policy.impl.ItemImageView android:layout_gravity="center" android:id="@id/item1" android:layout_width="48.0dip" android:layout_height="48.0dip" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/item_bg2" android:background="@drawable/item_bg_02" android:layout_width="160.0dip" android:layout_height="160.0dip">
+        <com.android.internal.policy.impl.ItemImageView android:layout_gravity="center" android:id="@id/item2" android:layout_width="48.0dip" android:layout_height="48.0dip" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/item_bg3" android:background="@drawable/item_bg_03" android:layout_width="160.0dip" android:layout_height="160.0dip">
+        <com.android.internal.policy.impl.ItemImageView android:layout_gravity="center" android:id="@id/item3" android:layout_width="48.0dip" android:layout_height="48.0dip" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/item_bg4" android:background="@drawable/item_bg_04" android:layout_width="160.0dip" android:layout_height="160.0dip">
+        <com.android.internal.policy.impl.ItemImageView android:layout_gravity="center" android:id="@id/item4" android:layout_width="48.0dip" android:layout_height="48.0dip" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/item_bg5" android:background="@drawable/item_bg_05" android:layout_width="160.0dip" android:layout_height="160.0dip">
+        <com.android.internal.policy.impl.ItemImageView android:layout_gravity="center" android:id="@id/item5" android:layout_width="48.0dip" android:layout_height="48.0dip" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/item_bg6" android:background="@drawable/item_bg_06" android:layout_width="160.0dip" android:layout_height="160.0dip">
+        <com.android.internal.policy.impl.ItemImageView android:layout_gravity="center" android:id="@id/item6" android:layout_width="48.0dip" android:layout_height="48.0dip" />
+    </FrameLayout>
+</com.android.internal.policy.impl.ItemImageViewManager>

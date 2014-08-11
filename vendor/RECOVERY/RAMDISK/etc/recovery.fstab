@@ -1,0 +1,19 @@
+# mount point	fstype		device
+/sdcard           vfat          /dev/block/mmcblk1p1
+/kernel           emmc          /dev/block/platform/comip-mmc.1/by-name/kernel
+/boot             emmc          /dev/block/platform/comip-mmc.1/by-name/ramdisk
+/recovery         emmc          /dev/block/platform/comip-mmc.1/by-name/recovery
+/misc             emmc          /dev/block/platform/comip-mmc.1/by-name/misc
+/fota             emmc          /dev/block/platform/comip-mmc.1/by-name/fota
+/modemarm         emmc          /dev/block/platform/comip-mmc.1/by-name/modemarm
+/modemdsp0        emmc          /dev/block/platform/comip-mmc.1/by-name/modemdsp0
+/modemdsp1        emmc          /dev/block/platform/comip-mmc.1/by-name/modemdsp1
+/amt              ext4          /dev/block/platform/comip-mmc.1/by-name/amt
+/YL-params        emmc          /dev/block/platform/comip-mmc.1/by-name/YL-params
+/autobak          ext4          /dev/block/platform/comip-mmc.1/by-name/autobak
+/cache            ext4          /dev/block/platform/comip-mmc.1/by-name/cache
+/system           ext4          /dev/block/platform/comip-mmc.1/by-name/system
+/data             ext4          /dev/block/platform/comip-mmc.1/by-name/userdata
+/udisk            vfat          /dev/block/platform/comip-mmc.1/by-name/udisk
+/uboot            emmc          /dev/block/mmcblk0boot0
+

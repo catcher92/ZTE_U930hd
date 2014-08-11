@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:prvandroid="http://schemas.android.com/apk/prv/res/android">
+    <com.android.internal.widget.multiwaveview.MultiWaveView android:id="@id/incomingCallWidget" android:background="@*android:color/black" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="-46.0dip" android:layout_alignParentBottom="true" prvandroid:targetDescriptions="@array/incoming_call_widget_3way_target_descriptions" prvandroid:directionDescriptions="@array/incoming_call_widget_3way_direction_descriptions" prvandroid:targetDrawables="@array/incoming_call_widget_3way_targets" prvandroid:handleDrawable="@drawable/ic_in_call_touch_handle" prvandroid:leftChevronDrawable="@*android:drawable/ic_lockscreen_chevron_left" prvandroid:rightChevronDrawable="@*android:drawable/ic_lockscreen_chevron_right" prvandroid:waveDrawable="@*android:drawable/ic_lockscreen_outerring" prvandroid:outerRadius="@*android:dimen/multiwaveview_target_placement_radius" prvandroid:hitRadius="@*android:dimen/multiwaveview_hit_radius" prvandroid:vibrationDuration="20" prvandroid:snapMargin="@*android:dimen/multiwaveview_snap_margin" prvandroid:feedbackCount="3" prvandroid:verticalOffset="20.0dip" prvandroid:horizontalOffset="0.0dip" />
+    <RelativeLayout android:id="@id/inCallControls" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="70.0dip" android:layout_alignParentTop="true">
+        <ViewStub android:id="@id/dtmf_twelve_key_dialer_stub" android:layout="@layout/dtmf_twelve_key_dialer_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/bottomButtons" />
+        <LinearLayout android:orientation="vertical" android:id="@id/bottomButtons" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <FrameLayout android:id="@id/extraButtonRow" android:background="@drawable/dialpad_background_opaque" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:id="@id/manageConferenceButton" style="@style/InCallExtraButtonStyle">
+                    <ImageView android:id="@id/manageConferenceButtonImage" android:clickable="false" android:src="@drawable/ic_groups_holo_dark" android:contentDescription="@string/onscreenManageConferenceText" style="@style/InCallExtraButtonImage" />
+                    <TextView android:id="@id/manageConferenceButtonLabel" android:text="@string/onscreenManageConferenceText" style="@style/InCallExtraRowButtonText" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@id/cdmaMergeButton" style="@style/InCallExtraButtonStyle">
+                    <ImageView android:id="@id/cdmaMergeButtonImage" android:clickable="false" android:src="@drawable/ic_merge_holo_dark" android:contentDescription="@string/onscreenMergeCallsText" style="@style/InCallExtraButtonImage" />
+                    <TextView android:id="@id/cdmaMergeButtonLabel" android:text="@string/onscreenMergeCallsText" style="@style/InCallExtraRowButtonText" />
+                </LinearLayout>
+            </FrameLayout>
+            <LinearLayout android:orientation="vertical" android:background="@drawable/dialpad_background_opaque" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:background="@drawable/hold_meetting_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ToggleButton android:id="@id/dialpadButton" android:background="@drawable/btn_compound_dialpad" android:contentDescription="@string/onscreenShowDialpadText" style="@style/InCallCompoundButtonStyle" />
+                    <ToggleButton android:id="@id/audioButton" android:background="@drawable/btn_compound_audio" android:contentDescription="@string/onscreenAudioText" style="@style/InCallCompoundButtonStyle" />
+                    <ToggleButton android:id="@id/muteButton" android:background="@drawable/btn_compound_mute" android:contentDescription="@string/onscreenMuteText" style="@style/InCallCompoundButtonStyle" />
+                    <ImageButton android:id="@id/addButton" android:src="@drawable/ic_add_call" android:contentDescription="@string/onscreenAddCallText" style="@style/InCallButtonStyle" />
+                    <ImageButton android:id="@id/mergeButton" android:src="@drawable/ic_merge_holo_dark" android:contentDescription="@string/onscreenMergeCallsText" style="@style/InCallButtonStyle" />
+                    <ImageButton android:id="@id/menuButton" android:src="@drawable/ic_sysbar_menu" android:contentDescription="@string/menu_button" style="@style/InCallButtonStyle" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:background="@drawable/hold_meetting_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageButton android:id="@id/endButton" android:background="@drawable/end_call_background" android:src="@drawable/ic_end_call" android:contentDescription="@string/onscreenEndCallText" style="@style/InCallButtonStyle" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

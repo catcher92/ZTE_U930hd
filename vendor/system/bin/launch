@@ -1,0 +1,26 @@
+#!/system/bin/sh
+
+#add by tianqixing for log initialize 20120516
+file_name="/data/data/zte.com.cn.emode/logcat.sh"
+echo $(cat $file_name) > /data/data/zte.com.cn.emode/logtest
+case $(cat $file_name) in
+    1)
+    echo "logcat.sh==1" > /data/data/zte.com.cn.emode/logtest;
+	setprop persist.radio.radiolog.enable 1;
+	;;
+	0)
+    echo "logcat.sh==0" > /data/data/zte.com.cn.emode/logtest;
+	setprop persist.radio.radiolog.enable 0;
+    ;;
+    *)
+	secureprop=$(getprop ro.secure); 
+	echo $secureprop >> /data/data/zte.com.cn.emode/logtest;
+	if busybox [ "$secureprop" -eq "0" ];then
+	setprop persist.radio.radiolog.enable 1
+	else
+	echo test1 >> /data/data/zte.com.cn.emode/logtest
+	setprop persist.radio.radiolog.enable 0
+	fi	
+    ;;
+esac
+

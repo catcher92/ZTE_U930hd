@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.internal.policy.impl.UnlockViewManager android:layout_gravity="center" android:id="@id/unlock" android:layout_width="480.0px" android:layout_height="480.0px"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.android.internal.policy.impl.ChangeableDrawTextView android:layout_gravity="center" android:id="@id/prompt_string" android:layout_width="140.0dip" android:layout_height="140.0dip" />
+    <ImageView android:layout_gravity="center" android:id="@id/img_lock" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_lock_changeable_default" />
+</com.android.internal.policy.impl.UnlockViewManager>

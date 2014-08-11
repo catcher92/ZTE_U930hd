@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <EditText android:id="@id/edittext_number" android:layout_width="200.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:hint="@string/input_number" android:singleLine="true" android:inputType="phone" />
+        <ImageButton android:id="@id/select_contact" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_see_contacts_holo_dark" android:layout_alignParentRight="true" android:contentDescription="@string/selectContact" />
+    </LinearLayout>
+    <View android:background="?android:dividerHorizontal" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip">
+        <Button android:id="@id/btn_cancel" android:focusable="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/cancel" android:layout_weight="1.0" style="?android:attr/buttonBarButtonStyle" />
+        <View android:background="?android:dividerHorizontal" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <Button android:id="@id/btn_delete" android:focusable="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/speed_dial_delete" android:layout_weight="1.0" style="?android:attr/buttonBarButtonStyle" />
+        <View android:background="?android:dividerHorizontal" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <Button android:id="@id/btn_complete" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/ok" android:layout_weight="1.0" style="?android:attr/buttonBarButtonStyle" />
+    </LinearLayout>
+</LinearLayout>

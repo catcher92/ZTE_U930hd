@@ -1,0 +1,18 @@
+## Vold 2.0 fstab for Coral
+#
+## - Sean McNeil (sean.mcneil@windriver.com)
+## 
+
+#######################
+## Regular device mount
+## 
+## Format: dev_mount <label> <mount_point> <part> <sysfs_path1...> 
+## label        - Label for the volume
+## mount_point  - Where the volume will be mounted
+## part         - Partition # (1 based), or 'auto' for first usable partition.
+## <sysfs_path> - List of sysfs paths to source devices
+######################
+
+# Mounts the first usable partition of the specified device
+dev_mount sdcard /mnt/sdcard auto /devices/platform/comip-mmc.0/mmc_host/mmc1
+dev_mount internal_sdcard /mnt/sdcard2  16 /devices/platform/comip-mmc.1/mmc_host/mmc0

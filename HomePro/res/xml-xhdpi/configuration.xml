@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<default_configuration
+  xmlns:launcher="http://schemas.android.com/apk/res/com.baidu.home2">
+    <loop desktop_loop="false" />
+    <inter_loop inter_loop="false" />
+    <show_dockbar_applist_icon show_dockbar_applist_icon="true" />
+    <set_gesture gesture_up="true" gesture_down="true" gesture_doubleclick="0" />
+    <slide_wallpaper silde_wallpaper="false" />
+    <scroll_type scroll_type="3" />
+    <default_applist_background applist_bg="bg_test.jpg" />
+    <app_icon_size size="60" />
+    <launcher_application_box_text size="12" />
+    <launcher_page_snap_velocity distance="500" />
+    <only_portrait only_portrait="true" />
+</default_configuration>

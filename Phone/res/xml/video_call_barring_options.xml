@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:phone="http://schemas.android.com/apk/res/com.android.phone">
+    <CheckBoxPreference android:persistent="true" android:title="@string/barring_ao" android:key="vt_button_ao_key" />
+    <CheckBoxPreference android:persistent="true" android:title="@string/barring_oi" android:key="vt_button_oi_key" />
+    <CheckBoxPreference android:persistent="true" android:title="@string/barring_ox" android:key="vt_button_ox_key" />
+    <CheckBoxPreference android:persistent="true" android:title="@string/barring_ai" android:key="vt_button_ai_key" />
+    <CheckBoxPreference android:persistent="true" android:title="@string/barring_ir" android:key="vt_button_ir_key" />
+    <Preference android:persistent="true" android:singleLine="true" android:title="@string/cancel_all_barring" android:key="all_barring" />
+    <com.android.phone.EditPinPreference android:title="@string/callbarring_passwd_change" android:key="callbarring_passwd" android:dialogTitle="@string/callbarring_passwd_change" android:dialogMessage="@string/passwd_enter_old" android:positiveButtonText="@string/passwd_enter_ok" android:negativeButtonText="@string/passwd_enter_cancel" />
+</PreferenceScreen>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<add-resource type="array" name="shutdown_reboot_options" />
+	<string-array name="shutdown_reboot_options">
+		<item>@string/reboot_reboot</item>
+		<item>@string/reboot_recovery</item>
+	</string-array>
+</resources>

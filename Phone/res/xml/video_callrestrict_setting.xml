@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:persistent="false" android:title="@string/barry_outgoing" android:key="call_out_key">
+        <CheckBoxPreference android:persistent="false" android:title="@string/barry_alloutgoing" android:key="barry_alloutgoing" android:disableDependentsState="true" />
+        <CheckBoxPreference android:persistent="false" android:title="@string/barry_outgoinginter" android:key="barry_outgoinginter" android:dependency="barry_alloutgoing" />
+        <CheckBoxPreference android:persistent="false" android:title="@string/barry_outgoingroaming" android:key="barry_outgoingroaming" android:dependency="barry_alloutgoing" />
+    </PreferenceCategory>
+    <PreferenceCategory android:persistent="false" android:title="@string/barry_incoming" android:key="call_income_key">
+        <CheckBoxPreference android:persistent="false" android:title="@string/barry_allincoming" android:key="barry_allincoming" android:disableDependentsState="true" />
+        <CheckBoxPreference android:persistent="false" android:title="@string/barry_incomeroaming" android:key="barry_incomeroaming" android:dependency="barry_allincoming" />
+    </PreferenceCategory>
+    <PreferenceScreen android:persistent="false" android:title="@string/barry_cancelall" android:key="barry_cancelall" />
+    <PreferenceScreen android:persistent="false" android:title="@string/barry_changepassword" android:key="barry_changepassword" />
+</PreferenceScreen>

@@ -1,0 +1,12 @@
+#!/system/bin/sh
+
+# Use interface name if linkname is not available
+NAME=$IFNAME
+
+#/system/bin/setprop "net.$NAME.dns1" "$DNS1"
+#/system/bin/setprop "net.$NAME.dns2" "$DNS2" 
+#/system/bin/setprop "net.$NAME.local-ip" "$IPLOCAL" 
+#/system/bin/setprop "net.$NAME.remote-ip" "$IPREMOTE" 
+
+ROUTE_INFO_NAME=""$IFNAME".ps"
+/system/xbin/iproute2 rule del from "$IPLOCAL" table "$ROUTE_INFO_NAME"

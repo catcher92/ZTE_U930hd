@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+    <EditTextPreference android:singleLine="true" android:title="@string/str_preferred_plmn_list_index" android:key="key_edittext_plmn_list_index" android:dialogTitle="@string/str_preferred_plmn_list_index" />
+    <EditTextPreference android:singleLine="true" android:title="@string/str_preferred_plmn_list_name" android:key="key_edittext_plmn_list_name" android:dialogTitle="@string/str_preferred_plmn_list_name" />
+    <EditTextPreference android:singleLine="true" android:title="@string/str_preferred_plmn_list_id" android:key="key_edittext_plmn_list_id" android:dialogTitle="@string/str_preferred_plmn_list_id" />
+    <PreferenceCategory android:title="@string/str_preferred_plmn_list_access_mode">
+        <CheckBoxPreference android:persistent="false" android:title="@string/str_preferred_plmn_list_gsm_act" android:key="key_checkbox_plmn_list_gsm_act" android:summaryOn="@string/str_preferred_plmn_list_gsm_act_on" android:summaryOff="@string/str_preferred_plmn_list_gsm_act_off" />
+        <CheckBoxPreference android:persistent="false" android:title="@string/str_preferred_plmn_list_gsm_compact_act" android:key="key_checkbox_plmn_list_gsm_compact_act" android:summaryOn="@string/str_preferred_plmn_list_gsm_compact_act_on" android:summaryOff="@string/str_preferred_plmn_list_gsm_compact_act_off" />
+        <CheckBoxPreference android:persistent="false" android:title="@string/str_preferred_plmn_list_utran_act" android:key="key_checkbox_plmn_list_utran_act" android:summaryOn="@string/str_preferred_plmn_list_utran_act_on" android:summaryOff="@string/str_preferred_plmn_list_utran_act_off" />
+    </PreferenceCategory>
+</PreferenceScreen>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/mute" android:id="@id/radio_menu_mute" android:title="@string/radio_menu_mute" android:showAsAction="never" />
+    <item android:icon="@drawable/bg_switch_on" android:id="@id/radio_menu_power_off" android:title="@string/radio_menu_power_off" android:showAsAction="always" />
+    <item android:id="@id/radio_menu_search" android:title="@string/radio_menu_search_and_save" android:showAsAction="never" />
+    <item android:id="@id/radio_menu_channels" android:title="@string/radio_menu_channel" android:showAsAction="never" />
+    <item android:id="@id/radio_menu_audio_path" android:title="@string/radio_menu_audio_path_speaker" android:showAsAction="never" />
+    <item android:id="@id/id_radio_menu_add_to_fav" android:title="@string/radio_menu_add_to_fav" android:showAsAction="never" />
+    <item android:id="@id/id_radio_menu_delete_from_fav" android:title="@string/radio_menu_delete_fav" android:showAsAction="never" />
+    <item android:id="@id/id_radio_menu_sleep_time" android:title="@string/radio_menu_sleep_time" android:showAsAction="never" />
+    <item android:id="@id/id_radio_menu_tune" android:title="@string/radio_menu_tune" android:showAsAction="never" /> item android:id="@+id/radio_menu_setting"
+        android:showAsAction="never"
+        android:title="@string/radio_menu_setting"/-->
+</menu>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="apps_customize_maxCellCountX">4</integer>
+    <integer name="apps_customize_maxCellCountY">5</integer>
+    <integer name="workspace_cellCountX">4</integer>
+    <integer name="workspace_cellCountY">5</integer>
+    <integer name="download_icon_offset">5</integer>
+</resources>
